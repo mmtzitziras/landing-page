@@ -104,7 +104,6 @@ img{
     font-weight: bolder;
     font-size: 36px;
     margin-bottom: 20px;
-    border-bottom: #1f2937 2px dotted;
 }
 
 .info .dog-info {
@@ -151,4 +150,39 @@ img{
     width: 500px;
     align-self: flex-end;
     flex: 1;
+}
+
+.sign-up{
+    background-color: #3882f6;
+    display: flex;
+    flex: 1;
+    margin: 50px 200px;
+    border-radius: 0.5cm;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sign-up .sign-up-message{
+    color: #f9faf8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sign-up .sign-up-message p:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sign-up .sign-up-button{
+    border: 2px solid;
+    border-color: #e5e7eb;
+}
+
+.footer{
+    background-color:#1f2937;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+    color: #e5e7eb;
 }
