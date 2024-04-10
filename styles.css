@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img{
+    width: 300px;
+    height: auto;
+}
+
+.nav-bar{
+    display: flex;
+    flex: 1;
+    background-color: #1f2937;
+    color: aliceblue;
+    flex-wrap: wrap;
+}
+
+.nav-bar .logo {
+    align-self: flex-start;
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+.nav-bar .header-link{
+    align-items: flex-end;
+    margin-left: auto;
+    align-content: center;
+    font-size: 18px;
+
+}
+
+.nav-bar .header-link > a{
+    color: #e5e7eb;
+    margin: 10px;
+}
+
+
