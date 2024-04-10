@@ -1,11 +1,19 @@
 body {
     margin: 0;
     padding: 0;
+    
+}
+
+.page{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.page > * {
+    flex-shrink: 1;
+    flex-grow: 0;
+}
 img{
     width: 500px;
     height: auto;
@@ -124,42 +132,45 @@ img{
 }
 
 .inspirational-msg {
-    display: flex;
-    flex-direction: column;
+       
     background-color: #e5e7eb;
-    justify-content: center;
-    align-items: center;
     margin-top: 20px;
-    flex: 1;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.inspirational-msg > * {
+    flex-shrink: 1;
+    flex-basis: 80ch;
+    min-width: 0;
+
 }
 
 .inspirational-msg .msg {
 
     font: 36px light italic ;
     color: #1f2937;
-    min-width: 300px;
-    text-align: center;
-    flex-shrink: 1;
-    width: 800px;
 }
 
 .inspirational-msg .by{
     font-weight: bolder;
     font-size: 24px;
-    width: 500px;
-    align-self: flex-end;
-    flex: 1;
+    
 }
 
 .sign-up{
     background-color: #3882f6;
     display: flex;
-    flex: 1;
-    margin: 50px 200px;
     border-radius: 0.5cm;
     justify-content: space-around;
     align-items: center;
+    flex-shrink: 0;
+    flex-direction: row;
+}
+
+.sign-up > * {
+    flex-shrink: 0;
+    flex-wrap: wrap;
 }
 
 .sign-up .sign-up-message{
