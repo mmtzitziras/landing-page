@@ -12,7 +12,7 @@ body {
 
 .page > * {
     flex-shrink: 1;
-    flex-grow: 0;
+    flex-grow: 1;
 }
 img{
     width: 500px;
@@ -26,6 +26,14 @@ img{
     background-color: #1f2937;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.nav-bar > * {
+    flex-shrink: 1;
+    min-width: 0;            
+    text-overflow: ellipsis; 
+    white-space: nowrap;     
+    
 }
 
 .nav-bar .logo {
@@ -81,6 +89,12 @@ img{
     color: #e5e7eb;
 }
 
+.main-image {
+    flex-shrink: 1;
+    width: 400px;
+    min-width: 0;
+}
+
 .sign-up-button{
     background-color: #3882f6;
     color: #e5e7eb;
@@ -121,15 +135,17 @@ img{
     
 }
 
+.info .dog-info > * {
+    flex-basis: 200px;
+    text-align: center;
+}
+
 .info .dog-info .info-img > img {
     width: 200px;
     height: 170px;
     border: #3882f6 5px solid;
 }
 
-.info .dog-info .info-img {
-    flex-wrap: wrap;
-}
 
 .inspirational-msg {
        
@@ -143,6 +159,8 @@ img{
     flex-shrink: 1;
     flex-basis: 80ch;
     min-width: 0;
+    padding-left: 20px;
+    padding-right: 20px;
 
 }
 
@@ -165,20 +183,22 @@ img{
     justify-content: space-around;
     align-items: center;
     flex-shrink: 0;
-    flex-direction: row;
+    flex-direction: row; 
+    flex-wrap: wrap;   
 }
 
 .sign-up > * {
     flex-shrink: 0;
     flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
 }
 
 .sign-up .sign-up-message{
     color: #f9faf8;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    
 }
-
 .sign-up .sign-up-message p:nth-child(1){
     font-size: 20px;
     font-weight: bold;
