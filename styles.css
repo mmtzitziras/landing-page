@@ -66,6 +66,7 @@ img{
     background-color: #1f2937;
     text-align:left;
     justify-content: space-evenly;
+    gap: 5px;
 }
 
 .main-text > div {
@@ -75,6 +76,7 @@ img{
     align-self: center;
     flex-basis: 500px;
     margin-left: 20px;
+    margin-right: 20px;
    
 }
 
@@ -94,6 +96,8 @@ img{
     width: 400px;
     min-width: 0;
 }
+
+
 
 .sign-up-button{
     background-color: #3882f6;
@@ -176,22 +180,30 @@ img{
     
 }
 
+.sign-up-wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .sign-up{
     background-color: #3882f6;
     display: flex;
     border-radius: 0.5cm;
     justify-content: space-around;
     align-items: center;
-    flex-shrink: 0;
-    flex-direction: row; 
-    flex-wrap: wrap;   
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    margin: 75px 200px;
+    width: 1000px;
+    min-width: 300px;
+    padding: 20px;  
 }
 
 .sign-up > * {
-    flex-shrink: 0;
+    flex-shrink: 1;
     flex-wrap: wrap;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    
 
 }
 
